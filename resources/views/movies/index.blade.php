@@ -40,7 +40,7 @@
                         <tr>
                             <td> {{$item->id}}</td>
                             <td> {{$item->movie_title}}</td>
-                            <td> {{$item->poster}</td>
+                            <td> {{$item->poster}}</td>
                             <td> {{$item->genre_name}}</td>
                             <td> {{$item->director_name}}</td>
                             <td> {{$item->birth_date}}</td>

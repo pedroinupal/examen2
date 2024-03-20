@@ -12,8 +12,8 @@ class MovieController extends Controller
     public function index()
     {
     $movies = Movie::join('genres','genres.id', '=','movies.genre_id')
-        ->join('directors','directors.id', '=','movies.director_id')
-        ->select('movies.id','movies.movie_title','movies.poster','genres.genre_name,','directors.director_name','directors.birth_date')
+        ->join('directors','directors.id', '=','movies.directors_id')
+        ->select('movies.id','movies.movie_title','movies.poster','genres.genre_name','directors.director_name','directors.birth_date')
         ->get();
         
         return view('movies.index',compact('movies'));
